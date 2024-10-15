@@ -24,6 +24,7 @@ namespace GearAnimation
                 window.Width = screens[i].WorkingArea.Width;
                 window.Height = screens[i].WorkingArea.Height;
                 window.Show();
+                window.WindowStyle= WindowStyle.None;
                 window.WindowState = WindowState.Maximized;
             }
         }
