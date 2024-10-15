@@ -1,16 +1,17 @@
-﻿<Window x:Class="GearAnimation.MainWindow"
+<Window x:Class="GearAnimation.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
         xmlns:local="clr-namespace:GearAnimation"  
         mc:Ignorable="d"  
-        WindowState="Maximized"
+        WindowState="Maximized" WindowStyle = "None" 
         Title="Gear Loading Animation" Height="450" Width="450">
 
         
     <Grid Background="Black">
         <Viewbox Stretch="Uniform">
+            
             <Grid Width="300" Height="300" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Image Source="C:\Users\Kishan\programs\Dotnet 6.0\GearLoadingAnimation\Assets\gear1.png"
                        Width="25" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="127,130,0,0">
@@ -32,6 +33,7 @@
                         <RotateTransform x:Name="rotateGear3" CenterX="4" CenterY="4"/>
                     </Image.RenderTransform>
                 </Image>
+                <Label Content="Updating..." Foreground="White" FontSize="9" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,105,0,0"/>
             </Grid>
         </Viewbox>
     </Grid>
