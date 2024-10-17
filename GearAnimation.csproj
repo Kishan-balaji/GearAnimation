@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -8,5 +8,14 @@
     <UseWPF>true</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\gear.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\gear.png" />
+  </ItemGroup>
+  
 
 </Project>
